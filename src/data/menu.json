@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Cakalang Fufu",
+    "desc": "Traditional smoked skipjack tuna, hand-shredded and stir-fried with hot chilies.",
+    "price": "14.50",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ayam Woku",
+    "desc": "Aromatic chicken pieces simmered in turmeric, ginger, and fresh basil leaves.",
+    "price": "16.00",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Tude Bakar",
+    "desc": "Grilled mackerel (Tude) served with a side of dabu-dabu, a fresh salsa made of raw chopped chilies, shallots, green tomatoes, and lime juice.",
+    "price": "19.50",
+    "imageUrl": ""
+  },
+  {
+    "name": "Tinutuan",
+    "desc": "A savory, nutritious vegetable porridge made from rice, pumpkin, sweet potato, and corn, served with salted fish and spicy sambal roa.",
+    "price": "8.00",
+    "imageUrl": ""
+  }
+]

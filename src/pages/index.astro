@@ -1,0 +1,133 @@
+---
+// Import the menu data from your JSON file
+import menuData from '../data/menu.json';
+// Import the redesigned MenuCard component
+import MenuCard from '../components/MenuCard.astro';
+// Import your global styles to activate Tailwind v4
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manado Kitchen | Official Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,700;1,400&family=Outfit:wght@200;400;500;600;800&display=swap');
+        
+        :root {
+            --kabasaran-red: #C51D1D;
+            --off-white: #F5F2ED; /* Slightly darker/warmer for better contrast against white sections */
+            --charcoal: #121212; 
+        }
+
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background-color: var(--off-white);
+            color: #1A1A1A;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .serif-display { font-family: 'Unna', serif; }
+        .tracking-widest { letter-spacing: 0.4em; }
+
+        .contact-link {
+            transition: color 0.3s ease;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .contact-link:hover {
+            color: var(--kabasaran-red);
+        }
+
+        /* Improved readability for info text */
+        .info-description {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            line-height: 1.6;
+            color: #444; /* Darker than stone-500 for better contrast */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simple Professional Header -->
+    <header class="pt-20 pb-16 px-6 text-center border-b border-black/5">
+        <h1 class="serif-display text-7xl md:text-8xl font-bold mb-4">
+            Manado <span class="text-kabasaran-red italic">Kitchen</span>
+        </h1>
+        <p class="text-[10px] font-bold tracking-widest uppercase opacity-50">
+            Authentic Home Cooking • Est. 2024
+        </p>
+    </header>
+
+    <!-- Straightforward Order Instructions -->
+    <section class="py-16 bg-white border-b border-black/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-stretch">
+                <div class="md:col-span-4 flex flex-col justify-center">
+                    <h2 class="serif-display text-3xl mb-4 italic">Ordering</h2>
+                    <p class="text-[15px] info-description">Please message us directly to check current availability and place your order.</p>
+                </div>
+                <div class="md:col-span-4 flex flex-col justify-center">
+                    <h2 class="serif-display text-3xl mb-4 italic">Shipping</h2>
+                    <p class="text-[15px] info-description">We ship nationwide across the United States. Rates are calculated based on your location.</p>
+                </div>
+                
+                <!-- Redesigned Contact Info in a Dark Charcoal Box -->
+                <div class="md:col-span-4 bg-[#121212] p-8 md:p-10 rounded-sm shadow-2xl flex flex-col justify-center relative">
+                    <h3 class="text-white/30 text-[9px] font-extrabold uppercase tracking-[0.4em] mb-8">Order Via</h3>
+                    
+                    <div class="flex flex-col gap-4">
+                        <a href="https://wa.me/yournumber" class="contact-link text-white text-xs font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-3">
+                            <span>WhatsApp</span>
+                            <span class="text-kabasaran-red font-normal">→</span>
+                        </a>
+                        <a href="https://instagram.com/yourprofile" class="contact-link text-white text-xs font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-3">
+                            <span>Instagram</span>
+                            <span class="text-kabasaran-red font-normal">→</span>
+                        </a>
+                        <a href="sms:+1yournumber" class="contact-link text-white text-xs font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-3">
+                            <span>Text Message</span>
+                            <span class="text-kabasaran-red font-normal">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="flex items-center gap-6 mb-16">
+            <h2 class="serif-display text-5xl italic whitespace-nowrap">Our Menu</h2>
+            <div class="h-px w-full bg-black/5"></div>
+        </div>
+
+        <!-- Grid updated to display minimum 2 columns on mobile with static cards -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+            {menuData.map((item) => (
+                <div class="static-card">
+                  <MenuCard 
+                      name={item.name} 
+                      desc={item.desc} 
+                      price={item.price} 
+                      imageUrl={item.imageUrl} 
+                  />
+                </div>
+            ))}
+        </div>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="py-12 border-t border-black/5 text-center">
+        <p class="text-[9px] uppercase tracking-widest font-semibold opacity-30">
+            Manado Kitchen • Cooked with love since 2024
+        </p>
+    </footer>
+
+</body>
+</html>
