@@ -1,3 +1,6 @@
+# 🖥️ Screenshot
+![Alt Text](./web_screenshot_pc)
+
 # 🌋 Manado Kitchen - Digital Menu
 
 A high-performance digital menu for Manado Kitchen. Developed using Astro, Tailwind CSS, and JSON-driven content for seamless menu management and rapid deployment.
