@@ -1,26 +1,182 @@
 [
   {
-    "name": "Cakalang Fufu",
-    "desc": "Traditional smoked skipjack tuna, hand-shredded and stir-fried with hot chilies.",
-    "price": "14.50",
+    "name": "Cakalang Fufu Sous",
+    "desc": "Description...",
+    "price": "",
     "imageUrl": ""
   },
   {
-    "name": "Ayam Woku",
-    "desc": "Aromatic chicken pieces simmered in turmeric, ginger, and fresh basil leaves.",
-    "price": "16.00",
+    "name": "Cakalang Fufu Pampis",
+    "desc": "Description...",
+    "price": "",
     "imageUrl": ""
   },
   {
-    "name": "Ikan Tude Bakar",
-    "desc": "Grilled mackerel (Tude) served with a side of dabu-dabu, a fresh salsa made of raw chopped chilies, shallots, green tomatoes, and lime juice.",
-    "price": "19.50",
+    "name": "Cakalang Fufu Garo Lemon",
+    "desc": "Description...",
+    "price": "",
     "imageUrl": ""
   },
   {
-    "name": "Tinutuan",
-    "desc": "A savory, nutritious vegetable porridge made from rice, pumpkin, sweet potato, and corn, served with salted fish and spicy sambal roa.",
-    "price": "8.00",
+    "name": "Cakalang Fufu Woku",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Cakalang Fufu Gepe",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Asin Sous",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Asin Santan",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Tude Pepes",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Mas Woku Woka",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Mujair Woku Woka",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Tuna Woku Belanga",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Cakalang Woku Belanga",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Tuna Bumbu RW",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ayam Bulu",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ayam Bakar Minang Putra",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Perkedel Nike",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Nike Goreng Cakalang",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Nike Woku",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Payangka Goreng Sous",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ikan Payangka Woku",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Daun Singkong/Ubi Santan",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Daun Singkong/Ubi Bungkus",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Bunga Pepaya Tumis",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Daun Pepaya Tumis",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Bunga & Daun Pepaya Tumis",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Ganemo Bunga Pepaya Tumis",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Leilem",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Pangi",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Saut",
+    "desc": "Description...",
+    "price": "",
+    "imageUrl": ""
+  },
+  {
+    "name": "Jantung Pisang",
+    "desc": "Description...",
+    "price": "",
     "imageUrl": ""
   }
 ]
