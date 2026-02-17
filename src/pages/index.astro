@@ -18,7 +18,7 @@ import '../styles/global.css';
         
         :root {
             --kabasaran-red: #C51D1D;
-            --off-white: #F5F2ED; /* Slightly darker/warmer for better contrast against white sections */
+            --off-white: #F5F2ED; 
             --charcoal: #121212; 
         }
 
@@ -42,55 +42,66 @@ import '../styles/global.css';
             color: var(--kabasaran-red);
         }
 
-        /* Improved readability for info text */
         .info-description {
             font-family: 'Outfit', sans-serif;
             font-weight: 500;
             line-height: 1.6;
-            color: #444; /* Darker than stone-500 for better contrast */
+            color: #444;
+        }
+
+        /* Standout Search Styling */
+        .search-container {
+            transition: transform 0.3s ease;
+        }
+        .search-container:focus-within {
+            transform: translateY(-2px);
+        }
+        #menuSearch::placeholder {
+            color: #A8A29E;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Simple Professional Header -->
-    <header class="pt-20 pb-16 px-6 text-center border-b border-black/5">
-        <h1 class="serif-display text-7xl md:text-8xl font-bold mb-4">
+    <!-- Header Section -->
+    <header class="pt-16 pb-12 px-6 text-center border-b border-black/5">
+        <h1 class="serif-display text-6xl md:text-8xl font-bold mb-4">
             Manado <span class="text-kabasaran-red italic">Kitchen</span>
         </h1>
-        <p class="text-[10px] font-bold tracking-widest uppercase opacity-50">
+        <p class="text-[9px] font-bold tracking-[0.5em] uppercase opacity-60">
             Authentic Home Cooking • Est. 2024
         </p>
     </header>
 
-    <!-- Straightforward Order Instructions -->
-    <section class="py-16 bg-white border-b border-black/5">
+    <!-- Info Section: Order & Shipping -->
+    <section class="py-12 bg-white border-b border-black/5">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-stretch">
                 <div class="md:col-span-4 flex flex-col justify-center">
-                    <h2 class="serif-display text-3xl mb-4 italic">Ordering</h2>
-                    <p class="text-[15px] info-description">Please message us directly to check current availability and place your order.</p>
+                    <h2 class="serif-display text-2xl md:text-3xl mb-3 italic">Ordering</h2>
+                    <p class="text-[14px] info-description">Please message us directly to check current availability and place your order.</p>
                 </div>
                 <div class="md:col-span-4 flex flex-col justify-center">
-                    <h2 class="serif-display text-3xl mb-4 italic">Shipping</h2>
-                    <p class="text-[15px] info-description">We ship nationwide across the United States. Rates are calculated based on your location.</p>
+                    <h2 class="serif-display text-2xl md:text-3xl mb-3 italic">Shipping</h2>
+                    <p class="text-[14px] info-description">We ship nationwide across the United States. Rates are calculated based on your location.</p>
                 </div>
                 
-                <!-- Redesigned Contact Info in a Dark Charcoal Box -->
-                <div class="md:col-span-4 bg-[#121212] p-8 md:p-10 rounded-sm shadow-2xl flex flex-col justify-center relative">
-                    <h3 class="text-white/30 text-[9px] font-extrabold uppercase tracking-[0.4em] mb-8">Order Via</h3>
+                <!-- Contact Info Card -->
+                <div class="md:col-span-4 bg-[#121212] p-8 rounded-sm shadow-2xl flex flex-col justify-center relative border-b-4 border-kabasaran-red">
+                    <h3 class="text-white/30 text-[8px] font-extrabold uppercase tracking-[0.4em] mb-6">Order Via</h3>
                     
-                    <div class="flex flex-col gap-4">
-                        <a href="https://wa.me/yournumber" class="contact-link text-white text-xs font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-3">
+                    <div class="flex flex-col gap-3">
+                        <a href="https://wa.me/yournumber" class="contact-link text-white text-[10px] font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-2">
                             <span>WhatsApp</span>
                             <span class="text-kabasaran-red font-normal">→</span>
                         </a>
-                        <a href="https://instagram.com/yourprofile" class="contact-link text-white text-xs font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-3">
+                        <a href="https://instagram.com/yourprofile" class="contact-link text-white text-[10px] font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-2">
                             <span>Instagram</span>
                             <span class="text-kabasaran-red font-normal">→</span>
                         </a>
-                        <a href="sms:+1yournumber" class="contact-link text-white text-xs font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-3">
+                        <a href="sms:+1yournumber" class="contact-link text-white text-[10px] font-semibold uppercase tracking-[0.3em] flex items-center justify-between border-b border-white/5 pb-2">
                             <span>Text Message</span>
                             <span class="text-kabasaran-red font-normal">→</span>
                         </a>
@@ -100,17 +111,33 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <main class="max-w-7xl mx-auto px-6 py-20">
-        <div class="flex items-center gap-6 mb-16">
-            <h2 class="serif-display text-5xl italic whitespace-nowrap">Our Menu</h2>
+    <!-- Standout Search Bar Section -->
+    <section class="max-w-6xl mx-auto px-6 mt-16">
+        <div class="relative max-w-xl mx-auto search-container">
+            <input 
+                type="text" 
+                id="menuSearch" 
+                placeholder="Search our heritage menu..." 
+                class="w-full p-5 pl-14 bg-white rounded-sm border-2 border-black/10 focus:border-red-700 focus:ring-0 focus:outline-none transition-all shadow-xl serif-display italic text-xl md:text-2xl"
+            />
+            <div class="absolute left-5 top-1/2 -translate-y-1/2">
+                <svg class="w-5 h-5 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Grid -->
+    <main class="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20">
+        <div class="flex items-center gap-4 mb-10">
+            <h2 class="serif-display text-4xl md:text-5xl italic whitespace-nowrap">Our Menu</h2>
             <div class="h-px w-full bg-black/5"></div>
         </div>
 
-        <!-- Grid updated to display minimum 2 columns on mobile with static cards -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+        <div id="menuGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8">
             {menuData.map((item) => (
-                <div class="static-card">
+                <div class="menu-item" data-name={item.name.toLowerCase()}>
                   <MenuCard 
                       name={item.name} 
                       desc={item.desc} 
@@ -120,14 +147,48 @@ import '../styles/global.css';
                 </div>
             ))}
         </div>
+
+        <div id="noResults" class="hidden text-center py-20">
+            <p class="serif-display text-xl italic text-stone-400">No dishes found matching your search.</p>
+        </div>
     </main>
 
-    <!-- Simple Footer -->
-    <footer class="py-12 border-t border-black/5 text-center">
-        <p class="text-[9px] uppercase tracking-widest font-semibold opacity-30">
-            Manado Kitchen • Cooked with love since 2024
+    <!-- Footer -->
+    <footer class="py-12 border-t border-black/10 bg-black/5 text-center">
+        <p class="text-[9px] uppercase tracking-[0.5em] font-bold text-black/60">
+            Manado Kitchen • Authentic Flavors • Est. 2024
         </p>
+        <div class="mt-4 h-px w-6 bg-kabasaran-red mx-auto opacity-40"></div>
     </footer>
+
+    <!-- Search Script -->
+    <script>
+        const searchInput = document.getElementById('menuSearch') as HTMLInputElement | null;
+        const menuItems = document.querySelectorAll('.menu-item');
+        const noResults = document.getElementById('noResults');
+
+        if (searchInput && noResults) {
+            searchInput.addEventListener('input', (e) => {
+                const target = e.target as HTMLInputElement;
+                const searchTerm = target.value.toLowerCase();
+                let hasResults = false;
+
+                menuItems.forEach(item => {
+                    const htmlItem = item as HTMLElement;
+                    const name = htmlItem.getAttribute('data-name') || '';
+                    
+                    if (name.includes(searchTerm)) {
+                        htmlItem.style.display = 'block';
+                        hasResults = true;
+                    } else {
+                        htmlItem.style.display = 'none';
+                    }
+                });
+
+                noResults.classList.toggle('hidden', hasResults);
+            });
+        }
+    </script>
 
 </body>
 </html>
