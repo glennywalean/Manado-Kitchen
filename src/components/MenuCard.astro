@@ -52,18 +52,20 @@ const charcoal = "#1C1917";
     </div>
     
     <!-- Updated description style: matches the main page's stone-500 color and leading-relaxed spacing -->
-    <p class="text-sm text-stone-500 leading-relaxed line-clamp-3 mb-12">
-      {desc}
-    </p>
+    <div class="mb-12 relative group">
+      <p class="description-text text-sm text-stone-500 leading-relaxed line-clamp-3 transition-all duration-300">
+        {desc}
+      </p>
+      <button 
+        class="read-more-btn hidden text-[10px] font-bold uppercase tracking-widest mt-3 hover:opacity-70 transition-opacity focus:outline-none"
+        style={`color: ${kabasaranRed};`}
+      >
+        Read more
+      </button>
+    </div>
     
     <!-- Card Footer -->
-    <div class="mt-auto flex items-end justify-between">
-      <div class="flex flex-col gap-1">
-        <span class="text-[9px] font-black uppercase tracking-[0.4em] opacity-30 text-stone-900">
-          Manado Kitchen
-        </span>
-      </div>
-
+    <div class="mt-auto flex items-center justify-end gap-x-8 gap-y-3">
       <!-- Price Badge - Fixed to the bottom right of the card -->
       <div 
         class="text-white px-4 py-2 font-black text-sm tracking-[0.2em] shadow-md z-20"
@@ -84,3 +86,47 @@ const charcoal = "#1C1917";
     font-family: 'Unna', serif;
   }
 </style>
+
+<script>
+  function initReadMore() {
+    const cards = document.querySelectorAll('.menu-card');
+    
+    cards.forEach(card => {
+      const desc = card.querySelector('.description-text');
+      const btn = card.querySelector('.read-more-btn');
+      
+      if (!desc || !btn) return;
+
+      // Check if text is truncated
+      const checkOverflow = () => {
+        // We compare scrollHeight to clientHeight
+        // If scrollHeight is larger, it means text is clamped/overflowing
+        if (desc.scrollHeight > desc.clientHeight) {
+          btn.classList.remove('hidden');
+        }
+      };
+
+      // Initial check
+      checkOverflow();
+      
+      // Re-check on window resize (optional, but good for responsive)
+      window.addEventListener('resize', checkOverflow);
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isClamped = desc.classList.contains('line-clamp-3');
+        
+        if (isClamped) {
+          desc.classList.remove('line-clamp-3');
+          btn.textContent = 'Read Less';
+        } else {
+          desc.classList.add('line-clamp-3');
+          btn.textContent = 'Read More';
+        }
+      });
+    });
+  }
+
+  // Run on DOM content loaded and when Astro swaps pages (if using view transitions, though not present here, good practice)
+  document.addEventListener('DOMContentLoaded', initReadMore);
+</script>
