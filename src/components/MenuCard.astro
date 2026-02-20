@@ -19,21 +19,6 @@ const charcoal = "#1C1917";
 
 <div class="menu-card relative bg-white overflow-hidden flex flex-col h-full border border-[#1C1917]/5 shadow-sm">
   
-  <!-- Image Area - Aspect ratio adjusted for a more dramatic look -->
-  <div class="relative aspect-square overflow-hidden bg-stone-900">
-    {imageUrl ? (
-      <img 
-        src={imageUrl} 
-        alt={name} 
-        class="w-full h-full object-cover opacity-90" 
-      />
-    ) : (
-      <div class="w-full h-full flex items-center justify-center text-5xl opacity-20 filter grayscale">
-        🍛
-      </div>
-    )}
-  </div>
-  
   <!-- Information Content -->
   <div class="p-8 flex flex-col grow relative bg-white">
     <!-- Warrior Accent - Static red line -->
