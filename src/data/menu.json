@@ -2,181 +2,151 @@
   {
     "name": "Cakalang Fufu Sous",
     "desc": "Smoked skipjack tuna cooked in a spicy chili sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Cakalang Fufu Pampis",
     "desc": "Shredded smoked skipjack tuna stir-fried with aromatic spices.",
-    "price": "20",
-    "imageUrl": ""
+    "price": "20"
   },
   {
     "name": "Cakalang Fufu Garo Lemon",
     "desc": "Smoked skipjack tuna sautéed with tangy lemon basil and chili.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Cakalang Fufu Woku",
     "desc": "Smoked skipjack tuna simmered in a rich, spicy turmeric and basil sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Cakalang Fufu Gepe",
     "desc": "Grilled smoked skipjack tuna served with a traditional spicy dipping sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ikan Asin Sous",
     "desc": "Salted fish cooked in a savory and spicy tomato-based sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ikan Asin Santan",
     "desc": "Salted fish stewed in a creamy and savory coconut milk gravy.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ikan Tude Pepes & Daun Ubi",
     "desc": "Spiced mackerel wrapped in banana leaves, served with cassava leaves.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ikan Mas Woku Woka & Daun Ubi",
     "desc": "Goldfish cooked in aromatic Woku spices, served with cassava leaves.",
-    "price": "30",
-    "imageUrl": ""
+    "price": "30"
   },
   {
     "name": "Ikan Mujair Woku Woka & Daun Ubi",
     "desc": "Tilapia fish cooked in spicy Woku seasoning, accompanied by cassava leaves.",
-    "price": "30",
-    "imageUrl": ""
+    "price": "30"
   },
   {
     "name": "Ikan Tuna Woku Belanga",
-    "desc": "Fresh tuna chunks stewed in a spicy clay pot Woku sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "desc": "Fresh tuna chunks stewed in a spicy Woku sauce.",
+    "price": "25"
   },
   {
     "name": "Ikan Cakalang Woku Belanga",
-    "desc": "Skipjack tuna cooked slow in a traditional spicy Woku clay pot style.",
-    "price": "25",
-    "imageUrl": ""
+    "desc": "Skipjack tuna cooked slow in a traditional style.",
+    "price": "25"
   },
   {
     "name": "Ikan Tuna Bumbu RW",
     "desc": "Tuna cooked in a rich and spicy traditional Minahasan spice blend.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ayam Bulu",
     "desc": "Spiced chicken slow-cooked inside a bamboo tube for distinct flavor.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ayam Bakar Minang Putra",
-    "desc": "Grilled chicken marinated in a special Minang-style spice blend.",
-    "price": "30",
-    "imageUrl": ""
+    "desc": "Grilled chicken in a special Minang-style spice blend.",
+    "price": "30"
   },
   {
     "name": "Perkedel Nike",
     "desc": "Crispy fritters made from small freshwater Nike fish and spices.",
-    "price": "20",
-    "imageUrl": ""
+    "price": "20"
   },
   {
     "name": "Nike Goreng Kacang",
     "desc": "Crunchy fried Nike fish tossed with savory peanuts.",
-    "price": "20",
-    "imageUrl": ""
+    "price": "20"
   },
   {
     "name": "Nike Woku",
     "desc": "Small Nike fish cooked in a spicy and aromatic Woku sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ikan Payangka Goreng Sous",
     "desc": "Fried Payangka fish topped with a spicy and sour sauce.",
-    "price": "20",
-    "imageUrl": ""
+    "price": "20"
   },
   {
     "name": "Ikan Payangka Woku",
     "desc": "Payangka fish stewed in a rich and spicy Woku seasoning.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Daun Singkong/Ubi Santan",
     "desc": "Cassava leaves cooked in a creamy and savory coconut milk curry.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Daun Singkong/Ubi Bungkus",
     "desc": "Seasoned cassava leaves wrapped and cooked to perfection.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Bunga Pepaya Tumis",
     "desc": "Stir-fried papaya flowers with aromatic herbs and spices.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Daun Pepaya Tumis",
     "desc": "Sautéed papaya leaves seasoned with savory spices.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Bunga & Daun Pepaya Tumis",
     "desc": "A savory stir-fry combination of papaya flowers and leaves.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Ganemo Bunga Pepaya Tumis",
     "desc": "Melinjo leaves stir-fried with papaya flowers and spices.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Leilem",
     "desc": "Savory dish featuring Leilem leaves cooked with rich spices.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Pangi",
     "desc": "Traditional meat dish cooked with Pangi leaves and spices.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Saut",
     "desc": "Young banana trunk stir-fried with fragrant herbs and spices.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   },
   {
     "name": "Jantung Pisang",
     "desc": "Banana blossom curry cooked in a rich and savory coconut milk sauce.",
-    "price": "25",
-    "imageUrl": ""
+    "price": "25"
   }
 ]
