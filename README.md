@@ -1,8 +1,8 @@
-# 🌋 Manado Kitchen - Digital Menu
+# Manado Kitchen - Digital Menu
 
 A high-performance digital menu for Manado Kitchen. Developed using Astro, Tailwind CSS, and JSON-driven content for seamless menu management and rapid deployment.
 
-# 🎯 Project Purpose
+# Project Purpose
 
 This project was developed to showcase:
 
@@ -12,7 +12,7 @@ This project was developed to showcase:
 
 - **Scalable Architecture**: A decoupled structure allowing for seamless content updates without modifying core component logic.
 
-# 🛠 Tech Stack
+# Tech Stack
 
 **Framework**: Astro (Static Site Generation)
 
@@ -20,7 +20,7 @@ This project was developed to showcase:
 
 **Content**: JSON-driven architecture
 
-# 📋 Technical Features
+# Technical Features
 
 **Minimum 2-Card Grid**: Custom responsive breakpoints ensuring a premium layout on all mobile devices.
 
@@ -28,7 +28,7 @@ This project was developed to showcase:
 
 **JSON Integration**: Dynamic rendering of menu items from src/data/menu.json, simulating a headless CMS experience.
 
-# 📦 Local Development
+# Local Development
 
 Follow these steps to get the project running on your local machine:
 
